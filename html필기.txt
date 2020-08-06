@@ -387,3 +387,117 @@ dl,dt,dd문
         가나다라마바사</pre>
    </body>
 </html>
+--------------------------------------------------
+<디테일즈 서머리>
+<html>
+    <head></head>
+    <body>
+        <ul>
+            <li><a href="#bts">on</a></li>
+        </ul>
+        <h3 id="bts">on</h3>
+        <pre>
+            dddd
+        </pre>
+    </body>
+</html>
+<html>
+    <head></head>
+    <body>
+        <h3>detail,summary</h3>
+        <hr>
+        <details>
+            <summary>문제1</summary>
+            <p>언어 3가지</p>
+        </details>
+    </body>
+</html>
+------------------------------------------------
+<mark,time,meter>
+<html>
+    <head></head>
+    <body>
+        <h3>detail,summary</h3>
+        <hr>
+        <details>
+            <summary>문제1</summary>
+            <p>언어 3가지</p>
+        </details>
+        <details>
+            <summary>문제2</summary>
+            <p>자바,스크립터,HTML</p>
+        </details>
+    </body>
+</html>
+<html>
+    <head></head>
+    <body>
+        <p>
+            내일<mark>시험</mark><br>
+            시간<time>09:30</time><br>
+            난이도<meter value="0.6" max="1.0">60%</meter><br>
+            로딩<progress value="2" max="10"></progress><br>
+        </p>
+    </body>
+</html>
+-------------------------------------------------------------
+입력하는 칸
+<html>
+        <head></head>
+        <body>
+            <dl>
+                <dt><h1>예약정보</h1></dt></dl>
+                <dl>
+                <dd>이름 : <input type="text"></dd></dl>
+                <dl>
+                <dd>휴대폰 : <input type="text"></dd></dl>
+                <dl>
+                <dd>이메일 : <input type="text"></dd></dl>
+                <dl><dd><input type="submit"></dd></dl>    
+            
+        </body>
+</html>
+---------------------------------------------------------------
+여러가지 입력칸
+<html>
+    <head></head>
+    <body>
+        <form>
+            이름: <input type="text" value=""><br>
+            암호: <input type="password" value="" maxlength="4"><br>
+            자소서: <textarea cols="20" rows="5">자기소개서 작성</textarea>
+
+        </form>
+    </body>
+</html>
+---------------------------------------------------------------
+<교재문재>
+<html>
+    <head></head>
+    <body>
+        <h1><d>프런트엔드 개발자 지원서</d></h1>
+        <p>HTML,CSS,Java에 대한 기술적 이해와 경험이 있는 분을 찾습니다</p>
+        <hr>
+        <dl>
+            <dt><h4>개인정보</h4></dt>
+            <dd>이름<input placeholder="공백없이 입력하세요"></dd>
+            <dd>연락처<input type="text"></dd>
+        </dl>  
+        <dl>
+            <dt><h4>지원분야</h4></dt>
+            <dd><label><input type="radio" name ="aa" value="web1">웹 퍼블리싱</label></dd>
+            <dd><label><input type="radio" name ="aa" value="web2">웹 에플리케이션 개발</label></dd>
+            <dd><label><input type="radio" name ="aa" value="web3">개발 환경 개선</label></dd>
+
+        </dl>
+        <dl>
+            <dt><h4>지원동기</h4></dt>
+            <dd><textarea cols="50" rows="10" placeholder="본사 지원 동기를 간략하게 써주세요"></textarea></dd>
+            <dd><input type="submit" value="접수하기">
+            <input type="submit" value="다시쓰기"></dd>
+        </dl>
+           
+
+        </form>
+    </body>
+</html>
