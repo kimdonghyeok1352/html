@@ -1,0 +1,389 @@
+<p>종료태크 &lt;/hr/&gt;</p> :/hr을 출력하고 싶을때
+<br>:줄바꾸기
+--------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            제목
+        </title>
+    </head>
+    <body>
+        <b>진하게</b>
+        <strong>중요한</strong>
+        <i>이탤릭체</i>
+        <small>작은글자</small>
+        <mark>하이라이트</mark>
+    </body>
+    
+</html>  
+----------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            떡복이 만드는 순서
+        </title>
+    </head>
+    <body>
+        <h3>
+            떡볶이 만드는순서
+        </h3>
+        <hr>
+        <ol type ="1">
+            <li>물을 넣는다</li>
+            <li>떡을 넣는다</li>
+            
+        </ol>
+    </body>
+    
+</html>  
+------------------------------------------------------------
+<pre>공부!
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            개발자의 포맷 그대로 출력
+        </title>
+    </head>
+    <body>
+        <h3>개발자의 포맷 그대로 출력하기</h3>
+        <hr>
+        <p>
+            &lt;p&gt;태그를 사용하면
+                    여러개의 빈 칸은 하나로
+                    여러 줄을 한 줄에 붙여 출력됩이다
+        </p>
+        <hr>
+        <pre>
+            그러나 &lt;pre&gt; 태그를 사용하면
+                    사용자가 입력한
+                    그대로 출력됩니다
+        </pre>
+    </body>
+</html>
+------------------------------------------------------------
+<ul>
+    <li>  --> 점 문자~~
+</ul>
+------------------------------------------------------------
+<ul>
+    <li>
+</ul>  문제
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>중첩리스트</title>
+    </head>
+    <body>
+        <ul>
+            <li>
+                좋아하는 음식
+                <ul>
+                    <li>
+                        보쌈
+                    </li>
+                    <li>
+                        족발
+                    </li>
+                    <li>
+                        막국수
+                    </li>
+                </ul>
+                <li>라면끓이는 방법
+                    <ol type ="1">
+                        <li>물끓인다</li>
+                        <li>라면 넣는다</li>
+                        <li>먹는다</li>
+                    </ol>
+                    
+                </li>
+            </li>
+        </ul>
+    </body>
+</html>  
+-----------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>중첩리스트</title>
+    </head>
+    <body>
+       <h2>가족여행코스</h2>
+       <ul>
+           <li>1일차
+               <ol type ='a'>
+                   <li>박물관</li>
+                   <li>낚시</li>
+               </ol>
+           </li>
+           <li>2일차
+                <ol type ='1'>
+                    <li>산</li>
+                    <li>바다</li>
+                </ol>
+           </li>
+       </ul>
+    </body>
+</html>
+------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>표만들기</title>
+    </head>
+    <body>
+       <table border = "1">
+           <caption>1학기성적</caption>
+            <thead>
+                <tr><th>이름</th>
+                <th>HTML</th>
+                <th>CSS</th></tr>
+            </thead> 
+
+            <tfoot>
+                <tr><th>합</th>
+                <th>225</th>
+                <th>230</th></tr> --> 글이 진함
+            </tfoot>    
+            <tbody>
+                <tr><td>오섭</td> -->글이연함
+                <td>80</td>
+                <td>70</td></tr>
+                <tr><td>길동</td>
+                <td>30</td>
+                <td>20</td></tr>
+                <tr><td>오섭</td>
+                <td>80</td>
+                <td>70</td></tr>
+            </tbody>       
+       </table>
+       
+    </body>
+</html>
+----------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>표만들기</title>
+    </head>
+    <body>
+       <table border = '3'>
+           <caption></caption>
+           <thead>
+               <tr>
+                   <th>제목 셀</th>
+                   <td>1행2열</td>
+                   <td>1행2열</td>
+               </tr>
+           </thead>
+           <tfoot>
+               <tr>
+                   <th>제목 셀</th>
+                   <td>2행2열</td>
+                   <td>2행2열</td>
+               </tr>
+           </tfoot>
+       </table>
+       
+    </body>
+</html>
+--------------------------------------------------------------
+사진을 그래프에 넣기
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>표만들기</title>
+    </head>
+    <body>
+       <table border = '3'>
+           <caption></caption>
+           <thead>
+               <tr>
+                  <td><img src = "C:/Users/soldesk/Desktop/cc.png"width ='230'height = '230'></td>
+                  <td><img src = "C:/Users/soldesk/Desktop/bb.jpg"width ='230'height = '230'></td> 
+               </tr>
+           </thead>
+           
+       </table>
+       
+    </body>
+</html>
+-------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>표만들기</title>
+    </head>
+    <body>
+      <h3><strong>Who am I?</strong></h3>
+      <h5>프런트엔드 웹 기술(Front-end Web Tech.)에 관심이 많습니다</h5>
+      <h5>현재 제주의 한 시골 마을에서 코딩중입니다</h5><br><br>
+      <h3><strong>Experience</strong></h3>
+       <ul>
+           <li>
+               프론트앤드 개발
+               <ul>
+                   <li>업무내용 업무내용 업무내용</li>
+                   <li>  업무내용</li>
+                   <li>업무내용 업무내용 </li>
+               </ul>
+            </li>
+            <li>
+                웹 디자인<ul>
+                    <li>업무내용 </li>
+                    <li>업무내용 업무내용 업무내용</li>
+                </ul>
+            </li>
+        </ul> 
+        <table border = '1'>
+            <caption>학력사항</caption>
+            <thead>
+                <tr>
+                    <td>출신학교</td>
+                    <td>전공</td>
+                    <td>기간</td>
+                    <td>구분</td>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>00고등학교</td>
+                    <td>-</td>
+                    <td>2001.3~2004.2</td>
+                    <td>졸업</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>00대학교</td>
+                    <td>컴퓨터공학</td>
+                    <td>2004.3~2008.2</td>
+                    <td>졸업</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+-------------------------------------------------------
+<링크만들기>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>링크</title>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a href="http://www.naver.com">네이버</a>
+            </li>
+            <li>
+                <a href = "http://www.google.com">구글</a>
+            </li>
+        </ul>
+    </body>
+</html>
+----------------------------------------------------
+밑에 부분 잘보자!
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h2>가사</h2>
+        <hr>
+        <dl>
+            <dt><b><h2>오늘 아침 온도는 26도</h2></b></dt>
+            <dd>모든게 궁금해</dd>
+            <dd>뭐가~~</dd>
+            <dd>your~~</dd>
+            <dd>내머리~~</dd><br>
+            <dd>com~~</dd>
+        </dl>
+    &copy;Copyright&lt;홍길동&gt;All right reserved &phone~ 
+        
+    </body>
+</html>
+----------------------------------------------------------
+dl,dt,dd문
+</html>
+<html>
+    <head></head>
+    <body>
+        <h2><b>도시소개</b></h2>
+        <hr>
+        <dl>
+            <dt>캘레포니아</dt>
+            <dd>맑고~~~~~~~~~~~~~~~~~</dd>
+            <dt>플로리다</dt>
+            <dt>미국의 동남부~~~~~~~~~~~~~~~</dt>
+            <dt>텍사스</dt>
+            <dt>드넓은~~~~~~~~~~~~</dt>
+        </dl>
+    </body>
+</html>
+-------------------------------------------------------------
+프레임 
+<html>
+    <head>iframe</head>
+    <body>
+       <h3>2개 iframe</h3>
+       <hr>
+       <iframe src="iframe1.html" width="200" height="150">
+
+       </iframe>
+       <iframe src="iframe2.html" width="110" height="150">
+           
+    
+    </body>
+</html>
+-------------------------------------------------------------
+<앵커>-->나무위키기능(위치이동)
+<html>
+   <head></head>
+   <body>
+       <h3>노래가사</h3>
+       <ul>
+           <li><a href="#bts">on</a></li>
+           <li><a href="#싹쓰리">여름 안에서</a></li>
+           <li><a href="#화사">마리아</a></li>
+       </ul>
+       <h3 id="bts">on</h3>
+    <pre>가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        
+
+       </pre>
+       <h3 id="싹쓰리">여름안에서</h3>
+       <pre> 가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사
+        가나다라마바사</pre>
+   </body>
+</html>
