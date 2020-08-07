@@ -634,3 +634,38 @@ dl,dt,dd문
         
     </body>
 </html>
+
+-----------------------------------------------------------------------
+<select-option>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1><d>여름방학 특강 신청</d></h1>
+        <fieldset>
+            <legend>수강과목</legend>
+            <label for="eng">영어회화(초급)</label>
+            <input form="text" placeholder="오전 9:00~11:00">
+        </fieldset>
+        <fieldset>
+            <legend>신청자</legend>
+            <label >이름</label>
+            <input type="text"><br>
+            <label>학번</label>
+            <input type="text" placeholder="하이픈없이 입력">
+            
+            <select>
+                <option>zjarhd</option>
+                <option>sdsd</option>
+                <option>dfsfdvs</option>
+                </select>
+            <label></label>
+        </fieldset>
+        <form>
+           
+       </form>
+        
+    </body>
+</html>
