@@ -669,3 +669,139 @@ dl,dt,dd문
         
     </body>
 </html>
+-----------------------------------------------------------------
+색주기
+<html>
+    <head>
+        <style>
+            p{color: red; font-size: 15px;}
+        </style>
+    </head>
+    <body>
+        <p style="color: blue;">블루베리와 항산화 효능</p>
+        <p style="color: magenta; font-size: 30px;">블루베리는 항상화제인 안토시아닌을 포함하고 있다.</p>
+
+    </body>
+</html>
+--------------------------------------------------------------
+외부파일 불러오는 작업
+
+<html>
+    <head>
+        <style>
+            @import url(text.css);
+        </style>
+    </head>
+    <body>
+        <p >블루베리와 항산화 효능</p>
+        <p style="color: magenta; font-size: 30px;">블루베리는 항상화제인 안토시아닌을 포함하고 있다.</p>
+        
+    </body>
+</html>
+--------------------------------------------------------------
+조부모 부모 자식(자손)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h3,li{color: tomato;}/*그룹*/
+            div>div>strong{/*자식*/
+                background: yellowgreen;
+            }
+            ul strong{color: cornflowerblue;} /*자손*/
+            .f{color: deeppink;}
+            .bb{color:blue}
+            #list{background: cyan;}
+            ul span{color: gold;}
+            li:hover{/*마우스 올리면 색변함*/
+                background: gray;
+            }
+            h3:first-letter{color: aqua;} -->첫글자만 색바뀜
+        </style>
+    </head>
+    <body class="bb">
+        <h3>셀렉터</h3>
+        <hr>
+        <div>
+        <div>8월<strong>학습</strong> 내용</div>
+        <ul id="list">
+            <li><span>DB</span></li>
+            <li><strong>HTML</strong></li>
+            <li>CSS</li>
+        </ul>
+        <div class="f"> 60점 이하는 F학점</div>
+        </div>
+    </body>
+</html>
+----------------------------------------------------------------
+문제
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .aa{color: brown;}
+        .bb{color: blue;}
+        pp{
+            color: white;
+            font-size: large;
+            font-style: bold;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>회사 소개</h2>
+    <pp>"사람을 도와주는 책</pp>
+    <p>나는 <span class="aa">'사람들에게 도움울 주는 개발자입니다</span></p><br>
+    <p>IT 기술과 실생활에 접목 시킨 개발을 하고 있으며 브랜드로 출간하고 있습니다.</p>
+    <p style="color: blue; font-size: x-large;">나의 미션</p>
+    <p>사람에게<span class="bb"> 도움</span>을 주는 책</p><br>
+    <p>열심히 사는 사람들에게 도움이 되고 싶습니다.</p><br>
+    <p style="color: blue;">개발의 지름길을 만들어 빠르게 원하는 곳으로 가도록 도와주는 개발자.이익을 얻을 수 있도록 도움이 되는 책을 만들고 싶습니다</p>
+</body>
+</html>
+----------------------------------------------------------------------------------
+<html>
+    <head>
+        <style>
+            .cc{text-align: center;
+            color: brown;}
+            pp{
+                color: blue;
+            }
+            ppp{
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="cc">설문지</h2>
+        <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은참여</p>
+        <hr>
+        <form style="background: pink;">
+        <pp>학년</pp> <input type="radio" name="aa" value="1"> 
+            1학년 <input type="radio" name="aa" value="1">
+            2학년 <input type="radio" name="aa" value="1">
+            3학년 <input type="radio" name="aa" value="1">
+            4학년<br>
+        <pp>성별</pp>  <input type="radio" name="gender" value="5"> 남
+                        <input type="radio" name="gender" value="5"> 여<br>
+        <pp>관심분야</pp>
+        <select name="subject">
+            <option value="1313">모바일소프트웨어</option>
+            <option value="1212">임베디드소프트웨어</option>
+        </select><br>
+        <pp>진로(다중선택)</pp>
+            <input type="checkbox" name="개발" value="23">개발
+            <input type="checkbox" name="개발" value="23">기획
+            <input type="checkbox" name="개발" value="23">영업<br>
+        <pp>남기고 싶은말</pp>    
+        <textarea cols="15" rows="2"></textarea>
+            
+        </form>   
+        <ppp>Copyright ©2020 by jiwon</ppp>
+    </body>
+</html>
+
