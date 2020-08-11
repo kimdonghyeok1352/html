@@ -804,4 +804,80 @@ dl,dt,dd문
         <ppp>Copyright ©2020 by jiwon</ppp>
     </body>
 </html>
+----------------------------------------------------------------------
+정렬,글자 가운데 선긋기 
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h2{text-align: right;}
+            span{text-decoration: line-through;}
+            strong{text-decoration: overline;}
+            .p1{text-indent: 3em; text-align: justify ;}
+            .p2{text-indent: 1em; text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h2>텍스트 제어</h2>
+        <p class="p1">HTML태그로 들여쓰기,정렬,공백같은 <span>텍스트 
+            제어</span> 할 수 없다.
+        </p>
+        <p class="p2"><strong>스타일 시트</strong>는
+        텍스트 제어가 가능하다.</p>
+        <a href="http://www.naver.com"
+        style="text-decoration: none;">밑줄 없는 하이퍼링크</a>
 
+    </body>
+</html>
+--------------------------------------------------------------------
+텍스트에 그림자넣기
+<html>
+    <head>
+        <style>
+            div{font:normal 24px;}
+            .aa{text-shadow: 3px 3px;}
+            .bb{text-shadow: 3px 3px red;}
+            .cc{text-shadow: 3px 3px 5px skyblue;}
+            .dd{color: white; text-shadow: 2px 2px 4px black;}
+            .ee{color: yellow; text-shadow: 2px 2px 2px black,
+                0 0 25px blue,
+                0 0 5px darkblue;}
+
+        </style>
+    </head>
+    <body>
+        <div class="aa">HTML5</div>
+        <div class="bb">HTML5</div>
+        <div class="cc">HTML5</div>
+        <div class="dd">HTML5</div>
+        <div class="ee">HTML5</div>
+
+    </body>
+</html>
+------------------------------------------------------------------
+가져오기 
+
+<html>
+    <head>
+        <style>
+            @import url(가져오는용.css);
+        </style>
+    </head>
+    <body>
+        <h3>도형 서식 폼 만들기</h3>
+        <hr>
+        <fieldset>
+            <legend>도형 서식 입력</legend>
+            선종류 <select>
+                <option>점선</option>
+                <option>실선</option>
+            </select><br>
+            선두께<input type="number" min="0" max="10">
+            선색<input type="color" size="3"><br>
+            투명도 (1~100)<input type="range" min="0" max="100">
+            <p style="color: blue; text-align: center;">"test"</p>
+        </fieldset>
+        <h5>시험용</h5>
+    </body>
+</html>
+------------------------------------------------------------
