@@ -93,3 +93,76 @@
 </html>
 ----------------------------------------------------------------------
 
+<html>
+    <head>
+        <style>
+            body{
+                background: antiquewhite;
+            }
+            span{
+                background: deepskyblue;
+            }
+            div.box{
+                background: yellow;
+                border-style: solid;
+                border-color: peru;
+                margin: 40px;
+                border-width: 30px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"><span>CSS</span></div>
+    </body>
+</html>
+-------------------------------------------------------------------
+둥근모서리 만들기
+
+<html>
+    <head>
+        <style>
+            p{
+                background-color: plum;
+                width: 300px;
+                height: 20px;
+            }
+            #r1{
+                border-radius: 50px;
+            }
+            #r2{
+                border-radius: 0px 20px 40px 60px;
+            }
+            #r3{
+                border-radius: 0px 20px 40px 20px;
+            }
+            #r4{
+                border-radius: 0px 20px 0px 20px;
+            }
+            #r5{
+                border-radius: 50px;
+                border-style: dotted;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="r1">반지름 50px의 둥근 모서리</p>
+        <p id="r2">반지름 0,20,40,60px의 둥근 모서리</p>
+        <p id="r3">반지름 0,20,40,20px의 둥근 모서리</p>
+        <p id="r4">반지름 0,20,0,20px의 둥근 모서리</p>
+        <p id="r5">반지름 50px의 둥근  점선 모서리</p>
+    </body>
+</html>
+------------------------------------------------------------------
+커서만들기 (신기하네)
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p style="cursor:help">도움말커서</p>
+        <p style="cursor:pointer">도움말커서</p>
+        <p style="cursor:progress">도움말커서</p>
+    </body>
+</html>
