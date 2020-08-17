@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <style>
+            #menu{
+                background: aliceblue;
+            }
+            #menu ul{
+                margin: 0;
+                padding: 0;
+                width: 560px;
+            }
+            #menu ul li{
+                display: inline-block;
+                list-style-type: none;
+                padding: 0px 20px;
+                /*top = bottom=0, left=right=20 */
+            }
+            #menu ul li:hover{ /*마우스 올리면 색 변함*/
+                color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="menu">
+            <ul>
+                <li>아메</li>
+                <li>라떼</li>
+                <li>카푸</li>
+            </ul>
+        </nav>
+    </body>
+</html>
+
+---------------------------------------------------------------------------
+-인라인 요소
+1.크기값을 지정못한다.(width,height)
+2.상하마진을 못가짐.
+3.한줄에 여러개 배치
+4.기본 너비값은 콘텐츠의 너비값
+<span>,<a>,<em>,<br>,<mark>,<strong>
+
+-블록요소 
+1.크기값을 지정할 수 있다.
+2.한줄에 한개만 배치가능 (줄바꿈)
+3.기본 너비값은 100%.
+4.상하좌우마진 모두 가짐.
+<div> <ul> <ol> <li> <form> <p>
+
+-인라인 블록요소
+1.한줄에 여러개 배치가능
+2.크기값을 지정할 수 있다.
+3.상하좌우마진 모두 가짐.
+
+<html>
+    <head>
+        <style>
+            span{border:1px solid skyblue;
+            width:400px;
+            height: 100px;/*크기값을 지정못해서 똑같음*/
+            margin: 20px /*좌우 마진은 가능*/
+            }
+            div{
+                border:1px solid black;
+                margin: 20px;
+                width: 300px;
+                height: 50px;
+            }
+            div div{
+                display: inline-block;
+                border: 2px dotted firebrick;
+                background: gainsboro;
+                margin: 10px;
+                width: 60px;
+                height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <span>인라인 요소...</span>
+        <span>인라인 요소</span>
+        <span>인라인 요소</span>
+        <span>인라인 요소</span>
+        <span>인라인 요소</span>
+        <div>블록 요소</div>
+        <div>블록 요소</div>
+        <div>블록 요소</div>
+
+        <div style="background: dimgray">
+        <div>인라인 블록 요소</div>
+        <div>인라인 블록 요소</div>
+        </div>
+    </body>
+</html>
+----------------------------------------------------------------------
+
