@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <p style="border:3px solid blue">3px</p>
+        <p style="border:3px hidden blue">3px</p>
+        <p style="border:3px dotted blue">3px</p>
+        <p style="border:3px dashed blue">3px</p>
+        <p style="border:3px double blue">3px</p>
+        <p style="border:3px groove yellow">3px</p>
+        <p style="border:3px ridge yellow">3px</p>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            div{
+                display: inline-block;
+                color: aliceblue;
+                background: coral;
+                padding: 5px;
+            }
+            #rotate{
+                transform:rotate(20deg);
+            }
+            #skew{
+                transform: skew(0deg,-20deg);
+            }
+            #translate{
+                transform: translateY(50px);
+            }
+            #scale{
+                transform: scale(5,1);
+            }
+            #rotate:hover{
+                background: blueviolet;
+                transform: rotate(50deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="rotate">rotate</div>
+        <div id="skew">skew</div>
+        <div id="translate">translate</div>
+        <div id="scale">scale</div>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            
+            .aa:hover{
+                transform: rotate(20deg);
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="aa"><span class="bb"><img src="aa.jpg" width="200px" height="200px"></span></div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            span{
+                transition:font-size 60s;
+            }
+            span:hover{
+                font-size: 500%;
+            }
+        </style>
+    </head>
+    <body>
+        <p><span>합격!!!</span></p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+
+            .g{
+                color:#4285f4;
+            }
+            .o{
+                color: #ea4335;
+            }
+            .o2{
+                color:#fbbc05;
+            }
+            .l{
+                color:#34a853 ;
+            }
+            .e{
+                color: #ea4335;
+            }
+            .qwe{
+                font-weight: bolder;
+                text-align: center;
+                font-size: 100px;
+                
+            }
+            .text{
+               width: 550px; 
+               height: 43px;
+               border: 2px solid gray;
+               border-radius: 20px;
+               box-shadow: 2px 2px 2px 2px gray;
+               font-size: 20px;
+               
+            }
+            .dd{
+                text-align: center;
+                
+            }
+            .bu{
+                text-align: center;
+
+            }
+            .button:hover{
+                transform: rotate(20deg);
+               
+            }
+            .button{
+                margin: 10px 10px;
+                font-weight: bolder;
+                border: 1px solid white;
+            }
+            .feeling{
+                font-weight: bolder;
+                border: 1px solid white;
+            }
+            .text:focus{
+                outline: none;
+            }
+            .button:focus{
+                outline: none;
+            }
+            .feeling:focus{
+                outline: none;
+            }
+            .text::placeholder{
+                font-size: 20px;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <p class="qwe"><span class="g">G</span><span class="o">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="e">e</span></p>
+        <p class="dd"><input type="search" class="text" placeholder="Google 검색 또는 URL 입력"></p>
+        <p class="bu"><input type="button" value="Google 검색" class="button"><input type="button" value="I'm Feeling Lucky" class="feeling"></p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            ul{
+                background: skyblue;
+            }
+            ul li:hover{
+                background: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>언어</h2>
+        <hr>
+        <ul>
+            <li>Java</li>
+            <li>C#</li>
+            <li>파이썬</li>
+            <li>HTML</li>
+        </ul>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            h2{
+                text-align: center;
+            }
+            span{
+                font-size: 50px;
+                color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>라면 끓이는 순서</h2>
+        <p><span>1.</span>라면을 준비하고 물을 끓인다</p>
+        <p><span>2.</span>물이 끓으면 스프와 면을 넣는다</p>
+        <p><span>3.</span>몇초간 저어 준 이후에 달걀과 파를 넣는다</p>
+        <p><span>4.</span>면이 익으면 먹는다</p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            div{
+                border:1px solid black;
+                background-color: green;
+                border-radius: 5px;
+                width: 80px;
+                height: 80px;
+
+            
+            }
+            div:hover{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            @keyframes tt{
+                0%{color: coral;}
+                30%{color: skyblue;}
+                100%{color: slateblue;}
+            }
+            span{animation-name: tt;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;}
+        </style>
+    </head>
+    <body>
+        <p><span>span</span>
+        5초마다 색깔이 변하면서 무한반복한다.
+        </p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            @keyframes tt{
+                0%{color: coral;}
+                30%{color: skyblue;}
+                100%{color: slateblue;}
+            }
+            span{animation-name: tt;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            font-size: 50px;}
+        </style>
+    </head>
+    <body>
+        <p><span>span</span>
+        5초마다 색깔이 변하면서 무한반복한다.
+        </p>
+    </body>
+</html>
+-->

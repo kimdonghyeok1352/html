@@ -884,3 +884,58 @@ dl,dt,dd문
 px -> 절대길이(고정되어있다)
 
 em -> 상대길이(2em 현재글씨의 2배를 의미)
+--------------------------------------------------------------
+선 종류별로
+
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <p style="border:3px solid blue">3px</p>
+        <p style="border:3px hidden blue">3px</p>
+        <p style="border:3px dotted blue">3px</p>
+        <p style="border:3px dashed blue">3px</p>
+        <p style="border:3px double blue">3px</p>
+        <p style="border:3px groove yellow">3px</p>
+        <p style="border:3px ridge yellow">3px</p>
+    </body>
+</html>
+---------------------------------------------------------------
+비틀고 확대하고 이동
+
+<html>
+    <head>
+        <style>
+            div{
+                display: inline-block;
+                color: aliceblue;
+                background: coral;
+                padding: 5px;
+            }
+            #rotate{
+                transform:rotate(20deg);
+            }
+            #skew{
+                transform: skew(0deg,-20deg);
+            }
+            #translate{
+                transform: translateY(50px);
+            }
+            #scale{
+                transform: scale(5,1);
+            }
+            #rotate:hover{
+                background: blueviolet;
+                transform: rotate(50deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="rotate">rotate</div>
+        <div id="skew">skew</div>
+        <div id="translate">translate</div>
+        <div id="scale">scale</div>
+
+    </body>
+</html>
