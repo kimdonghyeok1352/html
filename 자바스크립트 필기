@@ -1,0 +1,122 @@
+ <html>
+     <head>
+
+     </head>
+     <body>
+         <h3>자바 스크립트</h3>
+         <hr>
+         <script>
+             document.write("<h2>안녕</h2>");
+             document.write("3+5는 <br>");
+             document.write("<mark>8</mark>");
+         </script>
+     </body>
+ </html>
+ -----------------------------------------------------
+ html : 웹 페이지의 구조와 내용
+css : 색상이나 폰트,배치 등 웹페이지의 모양
+javascript : 사용자의 입력을 처리하거나 웹 애플리케이션 작성등 웹 페이지의 동적제어
+
+자바스크립트 코드의 위치이동
+1.HTML 태그의 이벤트 리스터 속성에 작성
+2.자바스크립트 파일에 작성
+3.URL 부분에 작성
+4.<script></script>태그 안에 작성
+
+prompt:입력함수
+confirm:확인,취소버튼
+alert:경고 다이어로그
+------------------------------------------------------------------
+ <html>
+     <head>
+
+     </head>
+     <body>
+         <h3>자바 스크립트</h3>
+         <hr>
+         <script>
+            var r=prompt("이름","김동혁");
+            if(r==null){ /*취소버튼,닫은 경우*/
+                document.write("이름없다");
+            }
+            else if(r==""){ /*입력없이 확인버튼 누름*/
+                documnet.write("취소");
+            }
+            else{
+                document.write(r);
+            }
+         </script>
+     </body>
+ </html>
+
+ ====================================================================
+ <html>
+        <head>
+   
+        </head>
+        <body>
+            <h3>자바 스크립트</h3>
+            <hr>
+            <script>
+               var r=confirm("전송할거니?");
+               if(r==true){
+                   document.write("네")
+               }
+               else{
+                   document.write("아니오")
+               }
+            </script>
+        </body>
+    </html>
+    ====================================================================
+<html>
+        <head>
+   
+        </head>
+        <body>
+            <h3>자바 스크립트</h3>
+            <hr>
+            <script>
+               var r=alert("경고")
+            </script>
+        </body>
+    </html>
+=========================================================================
+마우스올리면 이미지 바꾸기
+<html>
+        <head>
+   
+        </head>
+        <body>
+            <h3>자바 스크립트</h3>
+            <hr>
+            <img src="aa.jpg"
+            alt="라이언" onmouseover="this.src='C:/Users/soldesk/Desktop/bb.jpg'"
+            onmouseout="this.src='aa.jpg'">
+            <!--this: 현재 img태그를 가르킴 onmouseover,onmouseout 이벤트리스터-->
+        </body>
+    </html>
+==============================================================================
+
+<html>
+        <head>
+   
+        </head>
+        <body>
+            <script>
+                var x = 35;
+                var y=x/10;
+                var z=x%2;
+
+                x+=3;
+                document.write(x+"<br>");
+                document.write(y+"<br>");
+                document.write(z+"<br>");
+                
+                var a=36, b=35;
+                document.write((a>b) +"<br>");
+                document.write((a==b)+"<br>");
+
+            </script>
+        </body>
+    </html>  
