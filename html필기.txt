@@ -949,3 +949,52 @@ javascript : 사용자의 입력을 처리하거나 웹 애플리케이션 작�
 2.자바스크립트 파일에 작성
 3.URL 부분에 작성
 4.<script></script>태그 안에 작성
+-------------------------------------------------------------------------------
+<html>
+    <head>
+        <style>
+        html,body{
+            margin:0;
+            padding: 0;
+            height: 100%;
+        }
+        .h{
+            width: 100%;
+            height: 20%;
+            background: coral;
+            
+        }
+        .n{
+            width: 20%;
+            height: 30%;
+            float: left;
+            background: lightseagreen;
+        }
+        .s{
+            width: 60%;
+            height: 30%;
+            float: left;
+            background: lime;
+        }
+        .a{
+            width: 20%;
+            height: 30%;
+            float: left;
+            background: magenta;
+        }
+        .f{
+            width: 100%;
+            height: 60%;
+            float: left;
+            background: mediumslateblue;
+        }
+        </style>
+    </head>
+    <body>
+        <header class="h">header</header>        
+        <nav class="n">nav</nav>
+        <section class="s">section</section>
+        <aside class="a">aside</aside>
+        <footer class="f">footer</footer>
+    </body>
+</html>

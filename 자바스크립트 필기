@@ -120,3 +120,75 @@ alert:경고 다이어로그
             </script>
         </body>
     </html>  
+=======================================================================
+if문
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var grade;
+            var r=prompt("정수입력"); /*prompt 입력값은 문자열이다*/
+            r=parseInt(r);//문자열을 숫자로 바꿈
+            if(r>=90){
+                document.write("A");
+            }
+            else if(r>=80){
+                document.write("B");
+            }
+            else{
+                document.write("F");
+            }
+        </script>
+    </body>
+</html>    
+========================================================================
+커피주문
+
+html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var money;
+            var menu=prompt("사고싶은 커피 입력");
+            switch(menu){
+                case "에스프레소": document.write("4000원");
+                break;
+                case "아메리카노":document.write("4500원");
+                break;
+                case "라떼":document.write("5000원");
+                default:
+                    document.write("없는메뉴");
+            }
+        </script>
+    </body>
+</html>
+==================================================================
+점점숫자커지는 코드
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            for(var i=1; i<30; i++){
+                document.write("<span ");
+                document.write("style='font-size:"+ i +"px'>");
+                document.write(i+"px");
+                document.write("</span>");
+            }
+        </script>
+    </body>
+</html>
+================================================================
+1.isNaN()
+
+NaN:숫자가 아님을 나타내는 상수키워드
+
+2.parseInt()
+
+3.eval() :계산함
