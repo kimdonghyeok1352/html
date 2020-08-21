@@ -998,3 +998,24 @@ javascript : 사용자의 입력을 처리하거나 웹 애플리케이션 작�
         <footer class="f">footer</footer>
     </body>
 </html>
+-----------------------------------------------------------------
+3초간에 걸쳐서 확대
+
+<html>
+    <head>
+        <style>
+            .a{
+                transition:  3s;
+            }
+            .a:hover{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <span>
+        <img src="aa.jpg" class="a" width="200" height="200">
+        </span>
+    </body>
+</html>
+------------------------------------------------------------------

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--
+<html>
+    <head>
+        <script>
+            function prompt1(){
+                var nu = prompt("정수입력");
+                if(nu<50000){
+                for(var i=0; i<nu; i++){
+                    document.write("*");
+                }
+                }
+                else{
+                    document.write("오류");
+                }
+            } 
+        </script>
+    </head>
+    <body>
+        <script>
+           prompt1();
+           
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            .b{
+                width: 100px;
+                height: 60px;
+                border: 2px solid green;
+                text-align: center;
+                left:50px; top: 50px;
+                position: absolute;
+                line-height: 60px;
+                
+            }
+            .b:hover{
+                transform: rotate(20deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="b">Mouse Over</div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            h1{
+                text-align: center;
+            }
+            div{
+                text-align: center;
+            }
+            .a{
+                background-color: gray;
+                cursor:pointer;
+                font-size: 20px;
+                margin: 4px 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SOLDESK</h1>
+        <hr>
+        <div>
+            <a href="http://soldesk.wooripage.net/p/?j=2&rPath=VmtWb2FrOVdRbEpRVkRBOStN"><input type="button" value="회원가입" class="a" > </a>
+            <input type="button" value="로그인" class="a">
+            <input type="button" value="아이디/비번찾기" class="a">
+        </div>
+
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var a = new Date();
+            document.write(a.toLocaleString()+"<br>");
+            var b=new String("자바스크립트");
+            document.write(b+"<br>");
+            document.write(b.length+"<br>");
+            var food = ['떡볶이','김밥','돈가스'];
+            
+            var num=[1,2,3,4,5];
+            var sum=0;
+            for(var i=0; i<num.length; i++){
+                sum+=num[i];
+            }
+            document.write(sum);
+
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var p=[30,5,8,16,9];
+            for(var i=0; i<p[0]; i++){
+                document.write("*");
+            }
+            document.write("<br>");
+            for(var i=0; i<p[1]; i++){
+                document.write("*");
+            }
+            document.write("<br>");
+            for(var i=0; i<p[2]; i++){
+                document.write("*");
+            }
+            document.write("<br>");
+            for(var i=0; i<p[3]; i++){
+                document.write("*");
+            }
+            document.write("<br>");
+            for(var i=0; i<p[4]; i++){
+                document.write("*");
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var num=Math.random();
+            var ary=new Array();
+            document.write(Math.floor(num*100));
+            for(var i=0; i<10; i++){
+                ary[i]=Math.floor(num*100);
+            }
+            var max=0;
+            for(var i=0; i<10; i++){
+                if(max<a[i]){
+                    max=a[i]
+                }
+            }
+            document.write(max);
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            var a=new Array("김","이","박");
+            var b=new Array("최");
+            var c;
+
+            c=a.concat(b);
+            document.write(c);
+
+            c=a.join("@@"); //사이사이에
+            document.write(c+"<br>");
+
+            c=a.reverse();
+            document.write(c+"<br>");
+
+            c=a.toString();//원소사이에 ","를 삽입
+            document.write(c+"<br>");
+
+
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var n=new Date();
+            document.write(n.toUTCString());
+            var n1=n.getDate();
+            var n2=n.getHours();
+            document.write(n.toLocaleString());
+            //toLocaleString() 다음달 월
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var t = new Date();
+            if(t.getHours() %2==0){
+                document.body.style.backgroundColor="skyblue";
+            }
+            else{
+                document.body.style.backgroundColor="green";
+            }
+        </script>
+    </body>
+</html>
+
+<!doctype html>
+
+<html lang="ko">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title> 웹 폼</title>
+
+    <style>
+        body{
+           width: 500px;
+           
+            margin: auto;
+        }
+        legend{
+            color: green;
+            font-weight: bolder;
+        }
+        .button{
+            font-weight: bolder;
+            width: 200px;
+            
+        }
+        .sendform{
+            text-align: center;
+        }
+        .reg{
+            font-weight: bold;
+        }
+        em{
+            color: blueviolet;
+        }
+        .login,.register,.easys{
+            background: coral;
+        }
+        .register{
+            margin: auto;
+            
+        }
+        .reg{
+            width: 120px;
+            display: inline-block;
+            background: green;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+
+        <fieldset class="login">
+
+            <legend>로그인</legend>
+
+            <label for="user_id">아이디 </label>
+
+            <input type="text" id="user_id" size="10" autofocus>
+
+            <label for="user_pw">비밀번호 </label>
+
+            <input type="password" id="user_pw" size="10">
+
+            <input type="submit" value="로그인" class="button">
+
+        </fieldset>
+
+        <fieldset class="register">
+
+            <legend>가입하기</legend>
+
+            
+
+                    <label class="reg" for="user_name">아이디 <em>*</em></label>
+
+                    <input type="text" id="new_id" size="20" autocomplete="on" required><br>
+
+                
+
+                    <label class="reg" for="new_pw1">비밀번호 <em>*</em></label>
+
+                    <input type="password" id="new_pw1" size="20" required><br>
+
+                
+
+                    <label class="reg" for="new_pw2">비밀번호 확인 <em>*</em></label>
+
+                    <input type="password" id="new_pw2" size="20" required><br>
+
+               
+
+                    <label class="reg" for="user_name">이름 <em>*</em></label>
+
+                    <input type="text" id="user_name" size="20" required><br>
+
+                
+
+                    <label class="reg" for="user_mail">메일 주소 <em>*</em></label>
+
+                    <input type="email" id="user_mail" size="20" required><br>
+
+                
+
+                    <label class="reg" for="user_tel">전화번호 </label>
+
+                    <input type="tel" id="user_tel" size="20"><br>
+
+               
+
+        </fieldset>
+
+        <fieldset class="easys">
+
+            <legend>개발자</legend>
+
+            <textarea name="intro" cols="60" rows="5">
+
+자바 개발은 어려우면서도 수월하다.
+
+컴퓨터 언어 중 자바가 제일 재밌다.
+
+   </textarea>
+
+        </fieldset>
+
+        <fieldset class="sendform">
+
+            <input type="submit" value="가입하기" class="button">
+
+            <input type="reset" value="다시쓰기" class="button">
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        
+
+        //0부터 100까지 랜덤한 정수 10개출력
+        for(var i=0; i<10; i++){
+            var m=Math.random()*100;
+            var m1=Math.floor(m);
+            //m에서 소수점 이하 제거함(0~99사이)
+            document.write(m1+" ");
+        }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function randomInt(){
+                return Math.floor(Math.random()*9)+1;
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            var n=randomInt()+"*"+randomInt();
+            var n1 = prompt(n+"은?");
+            if(n1==null){
+                document.write("종료");
+            }
+            else{
+                var result=eval(n);
+                if(result==n1){
+                    document.write("정답");
+                }
+                else{
+                    document.write("아니오")
+                }
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var day = new Date();
+            document.write(day.toLocaleString()+"<br>");
+            if(day.getHours<=12){
+                document.write("오전");
+                document.body.style.backgroundColor="yellow"
+            }
+            else{
+                document.write("오후");
+                document.body.style.backgroundColor="skyblue"
+            }
+
+        </script>
+    </body>
+</html>
+-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="aa" style="color: blue; background: yellow"
+        onclick="this.style.color='tomato'">문장이다</p>
+        <script>
+            var n=document.getElementById("aa");
+            document.write(n.innerHTML);//html에서 가져온다
+            document.write(n.onclick);//어디서 발생했는지
+            document.write(n.style.color);//색깔추출
+        </script>
+    </body>
+</html>
