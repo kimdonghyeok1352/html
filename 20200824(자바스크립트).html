@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<!--
+<html>
+    <head>
+
+    </head>
+    <script>
+        var nu = prompt("정수입력하세요");
+        for(var i=0; i<nu; i++){
+            nu++;
+        }
+        document.write(nu);
+
+    </script>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var num=prompt("수식입력")
+            if(num=="+"){
+                document.write(eval(2+3));
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var ary = new Array(3);
+            ary[0] = 0;
+            ary[1] = 5.7;
+            ary[2] = "java";
+            for(var i=0; i<3; i++){
+                document.write(ary[i] + " ");
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function a(){
+                return this.num;
+            }
+            function plus(money){
+                this.num+=money;
+            }
+            function minus(money){
+                this.num -= money;
+                return money;
+            }
+            var mon=new Object();//사용자 객체
+            mon.name="김길동";
+            mon.id="123";
+            mon.num=30000;//초기값
+
+            mon.a=a;
+            mon.plus=plus;
+            mon.minus=minus; //메소드 작성
+        </script>
+    </head>
+    <body>
+        <script>
+            //객체 활용해보자!
+            document.write(mon.name);
+            mon.plus(10000);
+            document.write(mon.num+ "<br>");
+            mon.minus(5000);
+            document.write(mon.num+ "<br>");
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script> //리터럴 표기법
+            var mon={
+                name:"김길동",
+                id:"123",
+                num:30000,
+                a:function(){
+                    return this.num;
+                },
+                plus:function(money){
+                    this.num+=money;
+                },
+                minus:function(money){
+                    this.num-=money;
+                    return money;
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            //객체 활용해보자!
+            document.write(mon.name);
+            mon.plus(10000);
+            document.write(mon.a()+ "<br>");
+            mon.minus(5000);
+            document.write(mon.a()+ "<br>");
+        </script>
+    </body>
+</html>
+
+<head>
+
+    <script>  //3. 프로토타입으로 객체 만들기
+ 
+      function Mon(name,id,n){
+ 
+         this.name=name;
+ 
+         this.id=id;
+ 
+         this.n=n;
+ 
+ ​
+ 
+         this.a=function(){
+ 
+            return this.n;
+ 
+         }
+ 
+         this.plus=function(money){
+ 
+            this.n+=money;
+ 
+         }
+ 
+         this.minus=function(money){
+ 
+            this.n-=money;
+ 
+            return money;
+ 
+         }
+ 
+      }
+ 
+      </script>
+ 
+ </head>
+ 
+ <body>
+ 
+    <script>
+ 
+       var aa=new Mon("tom","123",30000);
+ 
+       document.write(aa.name);
+ 
+ ​
+ 
+       aa.plus(10000);
+ 
+       document.write(aa.a()+"<br>");
+ 
+       aa.minus(5000);
+ 
+       document.write(aa.a()+"<br>");
+ 
+    </script>
+ 
+    
+ 
+ </body>
+ 
+ </html> 
+
+ <html>
+     <head>
+        <script>
+            function pr(ary){
+                 for(var i=0; i<ary.length; i++){
+                     document.write(ary[i]+ " ");
+                 }
+                 document.write("<br>");
+             }
+             
+        </script>
+     </head>
+     <body>
+         <script>
+             //Array()에 name이라는 객체가 존재하니깐 주의!
+             //전체 배열(문자열)
+             //1.각 요소 출력
+             var names=new Array("aaa","b","cc");
+             
+             pr(name);
+            //2.가장 긴 이름 출력
+            var long=names[0];
+            for(var i=1; i<names.length; i++){
+                if(names[i].length>long.length){
+                    long=names[i];
+                }
+            }
+            document.write(long+"<br>");
+             
+             
+             
+             //3.가장 먼저 나오는 이름 출력
+
+             var n=names[0];
+             for(var i=1; i<names.length; i++){
+                 if(names[i]<n){
+                     n=names[i];
+                 }
+             }
+             document.write(n+"<br>");
+
+             
+         </script>
+     </body>
+ </html>
+  
+  <html>
+      <head>
+        <script> //리터럴 표기법
+            var music={
+                title:"aa",
+                singer:"bb",
+                price:20000,
+            }
+            document.write(music.title+"<br>");
+            document.write(music.singer+"<br>");
+            document.write(music.price+"<br>");
+        </script>
+      </head>
+      <body>
+          <script>
+              
+          </script>
+      </body>
+  </html>
+
+<html>
+    <head>
+      <script> 
+          function Music(){
+              this.title="aa";
+              this.singer="bb";
+              this.price=20000;
+          }
+          var music = new Music();
+          document.write(music.title+"<br>");
+          document.write(music.singer+"<br>");
+          document.write(music.price+"<br>");
+      </script>
+    </head>
+    <body>
+        <script>
+    
+        </script>
+    </body>
+</html>
+
+<head>
+
+</head>
+
+<body>
+
+   <p id="aa" style="color:aqua; background:black"
+
+   onclick="this.style.color='white'">이 문장
+
+   <span style="color:beige">입니다.</span></p>
+
+   
+
+<script>
+
+   var n=document.getElementById("aa");
+
+   var t= n.id + "\n";
+
+   t+=n.innerHTML + "\n";
+
+   t+=n.onclick +"\n";
+
+   alert(t); //경고 다이어로그
+
+   </script>
+
+</body>
+
+</html> 
+
+<head>
+    
+</head>
+
+<body>
+    <script>
+        function change(){
+            var n=document.getElementById("java");
+            //스크립트를 black으로 변경
+            //폰트사이즈 30px
+            //block
+            //width 3배
+            //경계선 3px 도트모양 색 deeppink
+            //margin 10px
+            n.style.color ="black";
+            n.style.fontSize="30px";
+                
+            
+        }
+    </script>
+   <p style="color: skyblue;">자바</p>
+   <span id="java" style="color: slateblue;">스크립트</span>
+   <input type="button" value="버튼" onclick="change()">
+
+</body>
+
+</html> 
+
+<html>
+    <head>
+        <script>
+            function change(){
+                var pp = document.getElementById("chi");
+                pp.innerHTML="캐릭터<img src = 'aa.jpg'>카카오";
+            }
+        </script>
+    </head>
+    <body>
+        <p id="chi" style="color: blue;" onclick="change()">클릭<span style="color: red;">해보세요</span></p>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>//리터럴
+            var music ={
+                singer:"bts",
+                money:100,
+                title:"asd"
+            };
+            var output ='';//for in 구문
+            for(var key in music){
+                output += key+ ':'+music[key]+"\n";
+            }
+            alert(output);
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            var book = new Object();
+            book.title = "연금술사";
+            book.author = "파울로 코엘류";
+            book.price = 15000;
+            
+            var book ={
+                title:"연금술사",
+                author:"파울로 코엘류",
+                price:15000
+            }
+            function book(title,author,price){
+                this.title="연금술사";
+                this.author="파울로 코엘류";
+                this.price=15000
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <script>
+            function student(name,score){
+                this.name=name;
+                this.score=score;
+                this.grade=function(){
+                    if(this.score>90){
+                        return "A";
+                    }
+                    else if(this.score>80){
+                        return "B";
+                    }
+                }
+            }
+            var a = new student("sam",60);
+            var b = new student("tom",100);
+            document.write(a.name+"학점"+a.grade()+"<br>");
+            document.write(b.name+"학점"+b.grade()+"<br>");
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(obj,color) {
+               obj.style.color=color; 
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="ch(this,'red')">버튼1</button>
+        <button onclick="ch(this,'orange')">버튼2</button>
+        <div onclick="ch(this,'yellow')">변경</div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){
+                var n =document.getElementsByTagName("span");
+                for(var i=0; i<n.length; i++){
+                    var num=n[i];
+                    num.style.color="coral";
+                    num.style.fontSize="30px";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="ch()">푸시푸시</button>
+        스가 <span>장관</span>은 “오늘은 얼마 전(17일) <span>검사</span>를 받은 뒤 추가 검사라고 듣고 있다”면서 “어쨌든 간에 <span>며칠</span> 전(19일) 총리 자신이 ‘이제부터 업무에 복귀해 열심히 하겠다’고 말씀하셨다”며 건강 이상설을 부인했다.
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <script>
+            function ch(){
+                var arrColor = ["#ff0","#6c0","#fcf","#cf0","#39f"];
+                var arrNum =parseInt(Math.random()*5);
+                var bodyTag =document.getElementById("theBody");
+                bodyTag.style.backgroundColor= arrColor[arrNum];
+            }
+        </script>
+    </head>
+    <body id="theBody">
+        <button onclick="ch()">푸시푸시</button>
+       
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var a = new String("안녕 하세요");
+            var b = "~~";
+            var c = a.concat(b);
+            var d = a.charAt(0);
+            var e = a.split(" ");
+            var f = a.replace("하세요","해요");
+            document.write("1"+c+"<br>");
+            document.write("2"+d+"<br>");
+            document.write("3"+e+"<br>");
+            document.write("4"+f+"<br>");
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var menu =["짜장면","짬뽕","김치찌개","순두부찌개","회덮밥"];
+            var num = Math.random();
+            var menunum = Math.floor(num*5);
+            var result = menu[menunum];
+            document.write(result);
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            div{
+                display: inline-block;
+                width:50px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var co=['red','orange','skyblue','coral','green'];
+            for(var i=0; i<co.length; i++){
+                var str="<div style = 'background-color :";
+                str += co[i];
+                str+="'>"+co[i]+"</div>";
+                document.write(str);
+
+            }
+        </script>
+    </body>
+</html>
+-->
+<html>
+    <head>
+        <script>
+            function ch(){
+                var n =document.getElementsByTagName("p")
+                n[0].style.color = 'coral';
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="ch()">색바꾸기 버튼</button>
+        <p>자바 스크립트</p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </body>
+</html>
