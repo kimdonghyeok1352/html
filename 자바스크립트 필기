@@ -320,3 +320,24 @@ DOM(Document Object Model)
 
 var p=  document,getElementById("a");
 p.style.color="red";
+======================================================================
+자바 스크립트 코드
+=================================================================
+dom 객체 동성
+var n = document.createElement("div");
+=><div>태그의 DOM객체 생성하는 코드의
+
+n.innerHTML="생성된 DIV";
+n.setAttribute("id","123");
+n.style.backgroundColor="yellow";
+
+DOM 트리에 삽입
+var p = document.getElementById("a");
+p.appendChild(n);
+
+DOM 트리에서 삭제
+var m = document.getElementById("a");
+var parent = m.parentElement;
+parent.removeChild(m);
+=====================================================================
+이벤트

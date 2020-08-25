@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--
+<html>
+    <head>
+
+    </head>
+    <body>
+        <img src="초콜릿사진.jpg" onmouseover="this.src='aa.jpg'">
+        //방법1
+        
+        
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function over(obj){ //방법 2
+                obj.src="aa.jpg"
+            }
+        </script>
+    </head>
+    <body>
+        <img src="초콜릿사진.jpg" onmouseover="over(this)">
+        
+        
+        
+    </body>
+</html>
+
+<html>
+    <head>
+        <script src="h.js">//방법 3
+            
+        </script>
+    </head>
+    <body>
+        <img src="초콜릿사진.jpg" onmouseover="over(this)">
+        
+        
+        
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <a href="javascript:alert('클릭했니?')">클릭</a> 방법 4
+    </body>
+</html>
+
+
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            var p = document.getElementsByClassName("aa");
+            var n = p.length;
+            document.write(n);
+        </script>
+        <div class="aa">수정</div>
+        <div class="bb">슬기</div>
+        <div class="aa">지혜</div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            var ary = ['자바','파이썬','C']//for-in구문
+            for(var i in ary){
+                alert(ary[i]);
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            document.write("<h3>안녕하세요</h3>");
+            document.write("<p style='color:blue'>오늘은 날씨가 좋네요</p>");
+            document.writeln(10);
+            document.writeln("명입니다.<br>");
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+        var n = null;
+        function cl(){
+            if(n==null || n.closed){
+                n=window.open("","w","width=300,height=200");
+            }
+            var t=document.getElementById("text");
+            //textarea의 id를 알아내서
+            n.document.open();
+            n.document.write(t.value);
+            //textarea에서 쓴 데이터들을 새브라우저에 출력
+            n.document.closed();
+        }    
+        </script>
+    </head>
+    <body>
+        <p>자바스크립트를 공부 해보자</p>
+        <textarea id="text" rows="10" cols="30"></textarea><br>
+        <button onclick="cl()">푸시푸시</button>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var max=0;
+            var num = new Array(10);
+            for(var i=0; i<10; i++){
+               
+                num[i] = parseInt(Math.random()*100);
+                if(max<num[i]){
+                    max=num[i];
+                }
+                
+            }
+            document.write(max);
+           
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){
+                var n = document.getElementById("aa");
+                n.style.color="green"
+            }
+        </script>
+    </head>
+    <body>
+        <h3>라면을 끓이는 순서</h3>
+        <hr>
+        <ol type="A" id="aa" onclick="ch()">
+            <li >물을 끓인다</li>
+            <li >라면과 스프를 넣는다</li>
+            <li >계란을 넣는다</li>
+            <li >먹는다</li>
+        </ol>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+           
+        </script>
+    </head>
+    <body>
+        <p2>계산해봅시다</p2>
+        <hr>
+        <div>
+            <p>3+4<span onclick="this.innerHTML=eval(3+4)">=답</span></p>
+            
+        </div>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){
+                var n = document.getElementById("kakao");
+                
+                n.style.scale(x:1.5,y:3.2);
+            }
+        </script>
+    </head>
+    <body>
+        <img src="aa.jpg" id="kakao" onclick="ch()">
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function divi(){
+                var v = document.getElementById("parent");
+                var n = document.createElement("div");
+                var img = document.createElement("img");
+                img.src="aa.jpg";
+
+                n.setAttribute("name","랩몬");
+                img.style.border = "1px solid black";
+                //<div id="랩몬" style="background-color:yellow">
+                n.addEventListener("click",function(){var p=this.parentElement; p.removeChild(this);});
+                
+                v.appendChild(img);
+            }
+        </script>
+    </head>
+    <body id="parent">
+        <p>sdkfjsdlfjslkdjflskvndlskvnsldkjiscsjlcksdckdsslfjsdf</p>
+        <a href="javascript:divi()">BTS</a>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            var n;
+            function aa(){
+                n = document.getElementById("p");
+                n.onmouseover=over;
+                n.onmouseout=out;
+            }
+            function over(){
+                n.style.backgroundColor="coral";
+            }
+            function out(){
+                n.style.backgroundColor="pink";
+            }
+        </script>
+    </head>
+    <body onload="aa()">
+        <p id="p">마우스 올려보기</p>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            var n;
+            function aa(){
+                n = document.getElementById("p");
+                n.addEventListener("mouseover",over);
+                n.addEventListener("mouseout",out);
+            }
+            function over(){
+                n.style.backgroundColor="coral";
+            }
+            function out(){
+                n.style.backgroundColor="pink";
+            }
+        </script>
+    </head>
+    <body onload="aa()">
+        <p id="p">마우스 올려보기</p>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            var n;
+            function aa(){
+                n = document.getElementById("p");
+                n.onmouseover = function(){
+                    this.style.backgroundColor="orchid";//익명함수
+                };
+                n.addEventListener("mouseover",function(){this.style.backgroundColor="green";});//익명함수
+            }
+            
+        </script>
+    </head>
+    <body onload="aa()">
+        <p id="p">마우스 올려보기</p>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            
+            
+        </script>
+    </head>
+    <body>
+        <p id="p">객체 출력</p>
+        <button onclick="f(event)">푸쉬푸쉬</button>
+        <script>
+            function f(e){
+                var t=e.type+"<br>"+e.target+"<br>"+e.currentTarget+"<br>"+e.defaultPrevented;
+                var n=document.getElementById("p");
+                n.innerHTML=t;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function qq(){
+                var r = confirm("이동할거니?");
+                return r;
+            }
+            function no(e){
+                e.preventDefault();//디폴트 행동 강제 취소(피자 체크 못하게 해놈)
+            }
+        </script>
+    </head>
+    <body>
+        <a href="http://www.naver.com" onclick="return qq()">이동?</a>
+        <hr>
+        <input type="checkbox">치킨<br>
+        <input type="checkbox" onclick="no(event)">피자
+        <script>
+
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            h3{
+                display: inline;
+            }
+        </style>
+        <script>
+            var n ="hidden";
+            function ch(){
+                if(n=="hidden"){
+                    n="visible";
+                }
+                else{
+                n="hidden"
+                }
+                var v=document.querySelectorAll("span");//태그 전책선택
+                for(var i of v){
+                    i.style.visibility=n;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>보이기</h3>
+        <button onclick="ch()">button</button>
+        <hr>
+
+        <ul>
+            <li>I (<span>love</span>)you.</li>
+            <li>마스크착용(<span>의무화</span>)</li>
+        </ul>
+    </body>
+</html>
+-->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var n = [1,2,3,4]
+            for(var i in n){
+                document.write(n[i]);
+            }
+            document.write("<br>")
+            var c = [1,2,3,4]
+            for(var i of c){
+                document.write(c[i]);
+            }
+            for(const i of [1,2,3,4]){
+                
+            }
+        </script>
+    </body>
+</html>
