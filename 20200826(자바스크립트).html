@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--
+<html>
+    <head>
+        <script>
+            function ch(){
+                var n = document.getElementById("aa");
+                n.style.border="3px dotted pink";
+            }
+        </script>
+    </head>
+    <body>
+        <h2>자바스크립트란?<button onclick="ch()">버튼</button></h2>
+        <hr>
+        <p>자바스크립트는 웹 페이지를 동적변경 시킬수있다<br>
+        <span id="aa">자바를</span>아는 사용자는 빠르게 학습할수 있다<br>
+        GUI프로그래밍에 필요한 요소들이 있어 약간의 어려움이 있다</p>
+        
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){//구조이해하자
+                var v = prompt("뭘먹을까");
+                var c = document.getElementById("aa");
+                c.innerHTML=v;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>innerHTML</h2>
+        <hr>
+        <p onclick="ch()" id="aa">오늘 저녁은 뭘 먹을까요?</p>
+        <script>
+            
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        
+        <script>
+            function ch(){
+              var n=document.getElementById("aa");
+              var div =document.createElement("div");
+              div = "치킨";
+              n.setAttribute("name","치킨")
+              n.appendChild(div);
+            }
+        </script>
+    </head>
+    <body>
+        <p>Q.컴퓨터 분야 뭐가 관심있니?</p>
+        <button onclick="ch()" id="aa">답보기</button>
+        <p>Q.뭐 먹고 싶니?</p>
+        <button onclick="ch()" id="aa">답보기</button>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){//계산하는 코드
+                var n = document.getElementById("aa");
+                var m=document.getElementById("bb");
+                m.value=eval(n.value);
+
+            }
+        </script>
+    </head>
+    <body>
+        수식<input type="text" id="aa"><button onclick="ch()">계산</button><br>
+        결과<input type="text" id="bb">
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function down(obj){ //마우스로 조작
+                obj.style.color="blue";
+            }
+            function over(obj){
+                obj.style.backgroundColor="coral";
+            }
+            function out(obj){
+                obj.style.border="3px dotted blue";
+            }
+            function wheel(e,obj){
+                if(e.wheelDelta < 0){
+                    obj.style.backgroundColor="yellow";
+                }
+                else{
+                    obj.style.backgroundColor="green";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <span onmousedown="down(this)" 
+             onmouseover="over(this)"
+             onmouseout="out(this)"
+             onwheel="wheel(event,this)">자바스크립트</span>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            document.oncontextmenu = on;//우클릭,함수라는 뜻임
+            function on(){
+                alert("안녕하세요");
+                return false;//오른쪽 클릭 해도 설정할수있는게 안뜸
+            }
+        </script>
+    </head>
+    <body>
+        <p>노프라브럼 오브콜스 베리굿</p>
+    </body>
+    
+</html>
+
+<html>
+    <head>
+        <script>
+            
+        </script>
+    </head>
+    <body onload="alert('잠시휴식합니다')">
+        <p>노프라브럼 오브콜스 베리굿</p>
+    </body>
+    
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p style="color: violet;">자바<span style="color: tomato;" id="aa">스크립트</span></p>
+        <input type="text">
+        <input type="button" value="결과" id="button">
+        <div id="div" style="color: teal;"></div>
+        <script>//어렵넹
+            var d=document.getElementById("div");
+            var b=document.getElementById("button");
+            document.body.addEventListener("click",capture,true);//캡쳐리스너 등록
+            b.addEventListener("click",bubble,false);//버블리스너 등록(버튼)
+
+            document.body.addEventListener("click",bubble,true);//버블등록
+
+            function capture(e){
+                var n = e.currentTarget;
+                var m = n.tagName;//태그이럼
+                d.innerHTML += m+"태그에"+e.type+"이벤트"+"<br>";
+            }
+            function bubble(e){
+                var n = e.currentTarget;
+                var m = n.tagName;//태그이럼
+                d.innerHTML += m+"태그에"+e.type+"이벤트"+"<br>";
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function on(){
+                var n = document.getElementById("aa");
+                var m = document.getElementById("bb");
+                m.onload = function(){ //익명함수 함수이름은 img.load
+                    var a = document.getElementById("span");
+                    a.innerHTML = m.width+" "+m.height;
+                }
+                var b = n.selectedIndex;
+                m.src=n.options[b].value;
+            }
+        </script>
+    </head>
+    <body onload="on()">
+        <select id="aa" onchange="on()">
+            <option value = "aa.jpg">카카오</option>
+            <option value = "초콜릿사진.jpg">초콜릿</option>
+        </select>
+        <span id="span">아윔헝그리!</span>
+        <p><img id="bb" src="aa.jpg"></p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function on(obj){
+                if(obj.value==""){
+                    alert("오류");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" onblur="on(this)">
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){
+                var n = document.getElementsByName("city");
+                for(var i=0; i<n.length; i++){
+                    if(n[i].checked==true){
+                        var m=n[i];
+                    }
+                }
+                alert(m.value);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="radio" name="city" value="seoul" >서울
+            <input type="radio" name="city" value="busan" >부산
+            <input type="radio" name="city" value="changwon" checked>창원
+        </form>
+        <button onclick="ch()">버튼</button>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){
+                var m=0,j=0,e=0;
+                var a = document.getElementById("aa");
+                var b = document.getElementById("bb");
+                var c = document.getElementById("cc");
+                if(a.checked == true){
+                    m = parseInt(200);
+                }
+                if(b.checked == true){
+                    j = parseInt(300);                
+                }    
+                if(c.checked == true){
+                    k = parseInt(500);
+                }
+                var e = eval(m+j+k);
+                document.write(parseInt(e));
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="checkbox" id="aa">아메리카노(200원)
+            <input type="checkbox" id="bb">라떼(300원)
+            <input type="checkbox" id="cc">딸기스무디(500원)
+            <button onclick="ch()">합계</button>
+
+        </form>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function on(){
+                var n = document.getElementById("aa");
+                var m = document.getElementById("bb");
+                m.onload = function(){ //익명함수 함수이름은 img.load
+                    var a = document.getElementById("span");
+                    a.innerHTML = m.width+" "+m.height;
+                }
+                var b = n.selectedIndex;
+                m.src=n.options[b].value;
+            }
+        </script>
+    </head>
+    <body onload="on()">
+        <select id="aa" onchange="on()">
+            <option value="aa.jpg">카카오</option>
+            <option value="초콜릿사진.jpg">초콜릿</option>
+        </select>
+        <span id="span">ddd</span>
+        <p><img id="bb" src="aa.jpg"></p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function load(ik){
+                window.open(ik,"_blank");
+
+            }
+        </script>
+    </head>
+    <body>
+        <a href="javascript:load('https://news.yahoo.co.jp/articles/1f321f8dec9aef8eeae41b46ee0b36e9e7984f82')">네이버</a>
+        
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+           
+        </script>
+    </head>
+    <body>
+        <a href="javascript:window.close()">닫기</a>
+        
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+           
+        </script>
+    </head>
+    <body>
+        <div><span id="aa" style="background-color: pink;">자바스크립트</span></div>
+        <script>
+            var n = document.getElementById("aa");
+            var t = setInterval("on()",1000); //1초주기로 on 함수를 호출
+            n.onclick = function(e){
+                clearInterval(t);
+                //타이머 해제
+            }
+            function on(){
+                var a = n.innerHTML; //자바스크립트가 a에 저장
+                var b = a.substr(0,1);
+                var c = a.substr(1,a.length-1);
+                a=c+b;
+                n.innerHTML =a;
+            }
+        </script>
+    </body>
+</html>
+-->
+<html>
+    <head>
+        <style>
+            .ab{
+                border: 2px dotted pink;
+            }
+            #aa{
+                border: 3px solid black;
+                margin: 5px;
+            }
+            #bb{
+                border: 3px solid black;
+                margin: 5px;
+            }
+
+        </style>
+        <script>
+            function ch(){
+                var n = document.getElementById("aa");
+                var m = document.getElementById("bb");
+                m.value = eval(n.value);
+            }
+        </script>
+    </head>
+    <body>
+        수식<input type="text" id="aa"><button onclick="ch()" class="ab">계산</button><br>
+        결과<input type="text" id="bb">
+    </body>
+</html>

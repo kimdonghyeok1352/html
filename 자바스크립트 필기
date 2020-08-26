@@ -340,4 +340,9 @@ var m = document.getElementById("a");
 var parent = m.parentElement;
 parent.removeChild(m);
 =====================================================================
-이벤트
+BOM ->
+window 객체 생성 3가지 방법
+1.브라우저가 새로운 웹 페이지를 로드할 때
+2.자바스크립트 코드로 window객체 생성
+    window.open();
+3.<ifram>태그 당 하나 씩 window객체 생성
