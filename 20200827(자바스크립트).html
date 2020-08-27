@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--
+<html>
+    <head>
+        <title></title>
+        <script>
+            window.onload=function(){
+                var n =document.getElementsByTagName("h1");
+                for(var i =0; i<n.length; i++){
+                    n[i].style.color="blue"; 
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h1>CSS</h1>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function double(obj){
+                obj.style.backgroundColor="pink";
+            }
+            function out(obj){
+                obj.style.backgroundColor="blue";
+            }
+        </script>
+    </head>
+    <body>
+        <span ondblclick="double(this)"
+        onmouseout="out(this)">색 이벤트</span>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function on(){
+                var m = document.getElementById("bb");
+                var n = document.getElementsByName("city");
+                for(var i=0; i<n.length; i++){
+                    if(n[i].checked==true){
+                        m.src=n[i].value
+                    }
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input type="radio" name="city" value="aa.jpg" onchange="on()" >서울
+        <input type="radio" name="city" value="초콜릿사진.jpg" onchange="on()">부산
+        <img id="bb" src="aa.jpg">
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            var n = document.getElementById("aa"); //addEventListener 다시해보자
+            document.body.addEventListener("click",ch);
+            n.addEventListener("click",ch);
+            
+            function ch(){
+            
+             p.innerHTML = "red";
+         }   
+        </script>
+    </head>
+    <body>
+        <p id="aa">색 이벤트</p>
+    </body>
+</html>
+
+<html ondblclick="ch()">
+    <head>
+        <script>
+            
+            function ch(){
+            var r = Math.floor(Math.random()*256);
+            var g = Math.floor(Math.random()*256);
+            var b = Math.floor(Math.random()*256);
+            document.body.style.backgroundColor="rgb("+ r + "," + g + "," + b +")";
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){
+                var n = document.getElementById("aa");
+                document.write("제이쿼리");
+            }
+        </script>
+    </head>
+    <body onload="ch()" id="aa">
+        <p>자바스크립트</p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function ch(){
+            var n = document.getElementById("head")
+            n.style.border = "2px solid black"
+            n.style.color = "orange";
+            }
+        </script>
+    </head>
+    <body onload="ch()">
+        <h1 id="head"><Header>헤더</Header></h1>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            var n = null;
+            function start(t){
+                n=setTimeout("load('http://www.naver.com')",t); // 2초후에 네이버 켜진다
+                document.getElementById("im").title="시작";
+            }
+            function cancel(){
+                if(n!=null){
+                clearTimeout(n); //타임 중단
+                }
+            }
+            function load(url){
+                window.location=url; //start함수에있는 load함수 정의
+            }
+        </script>
+    </head>
+    <body>
+        <img src="aa.jpg" id="im" onmouseover="start(2000)" onmouseout="cancel()">
+        
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function load(){ //옵션으로 사이트 이동가능
+                var n = document.getElementById("sel");
+                window.location = n.options[n.selectedIndex].value;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <select id="sel">
+            <option value="http://www.daum.net" selected>다음</option>
+            <option value="http://www.google.net">구글</option>
+
+        </select>
+        <button onclick="load()">접속</button>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body> 
+        <button onclick="history.back()">뒤로</button>
+        <button onclick="history.forward()">앞으로</button>
+        <button onclick="history.go(-1)">이전</button>
+
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <canvas id="a" width="150" height="100" style="background-color: coral;"></canvas>
+        <canvas id="a" width="250" height="100" style="background-color: green;"></canvas>
+        <canvas id="a" width="350" height="100" style="background-color: skyblue;"></canvas>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <canvas id="can" style="background-color: coral; width: 200; height: 150; "></canvas>
+        <script>
+            var n=document.getElementById("can");
+            var m=n.getContext("2d");
+            m.beginPath();//1.빈 경로를 만든다.
+            m.moveTo(100,10);//시작점
+            m.lineTo(20,30);//직선추가
+            m.lineTo(50,60);//직선추가
+            m.stroke();//경로를 캔버스에 그린다.
+
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            function pr(){
+                var t = screen.width +"<br>";
+                t += screen.height + "<br>";
+                t += screen.availHeight+"<br>";
+                t += screen.availWidth+"<br>";
+                t += screen.colorDepth+"<br>";
+                document.getElementById("aa").innerHTML=t;
+
+            }
+        </script>
+    </head>
+    <body onload="pr()">
+        <div id="aa">모니터</div>
+    </body>
+</html>
+
+<html>
+    <head>
+
+    </head>
+    <body onload="on()">
+        <canvas id="can" style="background-color: beige;" width="400" height="500"></canvas>
+        <script>
+            var canvas,con;
+            function on(){
+                canvas = document.getElementById("can");
+                con=canvas.getContext("2d");
+
+                con.lineWidth=10;
+                con.strokeStyle="pink";
+
+                canvas.addEventListener("mousedown",function(e){down(e)},false);
+                canvas.addEventListener("mousemove",function(e){move(e)},false);
+                canvas.addEventListener("mouseout",function(e){out(e)},false);
+                canvas.addEventListener("mouseup",function(e){up(e)},false);
+            }
+            var x,y=0;
+            var d=false;
+            function draw(xx,yy){
+                con.beginPath();
+                con.moveTo(x,y);
+                con.lineTo(xx,yy);
+                con.stroke();
+            }
+            function down(e){
+                x=e.offsetX;
+                y=e.offsetY;
+                d=true;
+            }
+            function up(e){
+                d=false;
+            }
+            function move(e){
+                if(!d) return;
+                var xx=e.offsetX, yy=e.offsetY;
+                draw(xx,yy);
+                x=xx; 
+                y=yy;
+            }
+            function out(e){
+                d=false;
+            }
+
+            
+        </script>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+        function start(interval){
+            setInterval("aa()",interval)
+        }
+        function aa(){
+            window.scrollBy(0,10);
+        }
+        </script>
+    </head>
+    <body onload="start(1000)">
+        きょう27日(木)、強い台風8号は午前6時現在、黄海を北上中です。この台風に向かう暖かく湿った空気や、高気圧の縁をまわる暖かく湿った空気の影響で、九州南部を中心に今朝は1時間に30ミリ以上の激しい雨や、70ミリを超える非常に激しい雨の降った所があります。沖縄や九州南部では昼頃まで非常に激しい雨の降る所があるでしょう。九州北部と中国、四国、近畿、東海、関東甲信、北陸でも雨雲が発達しやすく、局地的に激しい雨や雷雨となりそうです。晴れ間が出ていても、天気の急変に注意が必要です。東北は、福島県で夕方以降に激しい雨の降る所がありますが、その他の地域は大体晴れるでしょう。北海道もおおむね晴れる見込みです。
+    </body>
+</html>
+
+<html>
+    <head>
+        <script>
+            var r;
+            var g;
+            var h;
+            var a;
+            var b;
+            var c;
+            function ch1(){
+                a = document.getElementById("aa");
+                r = Math.floor(Math.random()*4);
+                a.innerHTML=r;
+                if(a.innerHTML == b.innerHTML && b.innerHTML == c.innerHTML){
+                var t = document.getElementById("dd");
+                t.innerHTML="성공";
+            }
+            }
+            function ch2(){
+                b = document.getElementById("bb");
+                g = Math.floor(Math.random()*4);
+                b.innerHTML=g;
+                if(a.innerHTML == b.innerHTML && b.innerHTML == c.innerHTML){
+                var t = document.getElementById("dd");
+                t.innerHTML="성공";
+            }
+            }
+            function ch3(){
+                 c = document.getElementById("cc");
+                h = Math.floor(Math.random()*4);
+                c.innerHTML=h;
+                if(a.innerHTML == b.innerHTML && b.innerHTML == c.innerHTML){
+                var t = document.getElementById("dd");
+                t.innerHTML="성공";
+            }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h5>숫자를 클릭하면 1에서 3사이의 난수로 바뀜</h5>
+        <hr>
+        <span id="aa" onclick="ch1()">a</span><span id="bb" onclick="ch2()">b</span><span id="cc" onclick="ch3()">c</span>
+        <span id="dd"></span>
+    </body>
+</html>
+-->
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        span {
+            font-style: italic;
+        }
+
+        #di {
+            display: inline-block;
+            background-color: deepskyblue;
+        }
+
+        #aa {
+            display: inline-block;
+            color: orange;
+            width: 50em;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        var n = document.getElementsByTagName("span");
+        function ch(obj) {
+            obj.innerHTML = Math.floor(Math.random() * 3) + 1;
+            if (n[0].innerHTML == n[1].innerHTML && n[1].innerHTML == n[2].innerHTML) {
+                var m = document.createElement("div");
+                m.setAttribute("id", "aa");
+                m.innerHTML = "성공";
+
+                m.addEventListener("click",
+                    function a() {
+                        for (var i = 0; i & ltn.length; i++) {
+                            n[i].innerHTML = "1";
+                        }
+                    })
+                obj.parentElement.appendChild(m);
+            }
+            else {
+                var m = document.createElement("div");
+                m.setAttribute("id", "aa");
+                m.innerHTML = "실패";
+
+                m.addEventListener("click",
+                    function a() {
+                        for (var i = 0; i & ltn.length; i++) {
+                            n[i].innerHTML = "1";
+                        }
+                    })
+                obj.parentElement.appendChild(m);
+            }
+        }
+
+    </script>
+
+<body>
+    <div id="di">
+        <span id="one" onclick="this.innerHTML=
+Math.floor(Math.random()*3)+1">1</span>
+
+        <span id="two" onclick="this.innerHTML=
+Math.floor(Math.random()*3)+1">1</span>
+
+        <span id="three" onclick="ch(this)">1</span>
+
+    </div>
+</body>
+
+</html>
