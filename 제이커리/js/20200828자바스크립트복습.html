@@ -269,7 +269,7 @@
 </body>
 
 </html>
--->
+
 <html lang="en">
 
 <head>
@@ -280,19 +280,414 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <script>
-        function ch(){
-            var n = document.getElementsByClassName("bb");
-            n.innerHTML 
+        n.addEventListener("click", function () {
+            return fun();
+        })
+        function fun() {
+            var obj = document.getElementById("di");
+            obj.style.backgroundColor = "violet";
         }
     </script>
 </head>
 
 <body>
-    <p class="bb">자신이 하는 일을 좋아하게 되는 것</p>
-    <button onclick="ch()"></button>
+    <div id="di" onclick="fun()">안녕하세요</div>
     <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script>
+       function ch1(){
+           var n = document.getElementById("aa");
+           n.style.fontSize = "30px";
+       }
+       function ch2(){
+           var s = document.getElementById("bb");
+           s.style.color="blue";
+       }
+    </script>
+</head>
+
+<body>
+    <h3>공부하고 싶은 것</h3>
+    <ul>
+        <li id="aa" onclick="ch1()">데이터베잉스</li>
+        <li id="bb" onclick="ch2()">빅데이터</li>
+        <li>웹스크래핑</li>
+        <li>스프링</li>
+        
+    </ul>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script>
+        function ch1(){
+            var n = document.getElementById("aa");
+            n.style.color="blue";
+        }
+        function ch2(){
+            var n = document.getElementById("aa");
+            n.style.color="green";
+        }
+    </script>
+</head>
+
+<body>
+    <p id="aa" onmouseover="ch1()" onmouseout="ch2()">자바스크립트</p>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script>
+        function aa(){
+            var n = document.getElementById("p");
+            n.addEventListener("mouseover",mouseover);
+            function mouseover(){
+            n.style.color="green";
+            n.addEventListener("mouseout",function(){n.style.color="blue"})
+        }
+        }
+        
+        
         
     </script>
+</head>
+
+<body onload="aa()">
+    <p id="p">자바스크립트</p>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        
+    </style>
+    <script>
+        var n;
+       function ch(obj){
+            n = document.getElementById("aa");
+           var c = document.getElementsByTagName("button");
+           
+           n.value += obj;
+           
+       }
+       function reset(obj){
+        n.value ='';
+       }
+       function aa(obj){
+        n.value = eval(n.value);
+       } 
+        
+    </script>
+</head>
+
+<body>
+       <h2>계산기</h2> 
+       <hr>
+       <input type="text" id="aa"><br>
+       <button onclick="reset(this)">c</button>
+       <button onclick="aa(this)">=</button><br>
+       <button onclick="ch(7)">7</button>
+       <button onclick="ch(8)">8</button>
+       <button onclick="ch(9)">9</button>
+       <button onclick="ch('/')">/</button><br>
+       <button onclick="ch(4)">4</button>
+       <button onclick="ch(5)">5</button>
+       <button onclick="ch(6)">6</button>
+       <button onclick="ch('*')">*</button><br>
+       <button onclick="ch(1)">1</button>
+       <button onclick="ch(2)">2</button>
+       <button onclick="ch(3)">3</button>
+       <button onclick="ch('-'')">-</button><br>
+       <button onclick="ch(0)">0</button>
+       <button onclick="ch('+')">+</button>
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script>
+        function aa(){
+            var n = document.getElementById("p");
+            n.addEventListener("mouseover",mouseover);
+            function mouseover(){
+            n.style.color="green";
+            n.addEventListener("mouseout",function(){n.style.color="blue"})
+        }
+        }
+        
+        
+        
+    </script>
+</head>
+
+<body onload="aa()">
+    <p id="p">자바스크립트</p>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        
+    </style>
+    <script>
+        
+        $(document).ready(function(){
+            $('h1#aa').css('color','blue');
+            $('h1.bb').css('color','green');
+            
+        })
+    </script>
+</head>
+
+<body>
+      <h1 id="aa">자바 스크립트</h1>
+      <h1 class="bb">JDBC</h1>
+      <h2 class="aa">HTML</h2>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        
+    </style>
+    <script> //자식선택자 바디에서 모든 자식!
+        $(document).ready(function(){
+            $('body>*').css('color','red');
+        }
+        );
+        
+    </script>
+</head>
+
+<body>
+      <div>
+          <ul>
+              <li>짜장면</li>
+              <li>탕수육</li>
+              <li>팔보채</li>
+              <li>짬뽕</li>
+          </ul>
+      </div>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        
+    </style>
+    <script> //자식선택자 바디에서 모든 자식!
+        $(document).ready(function(){
+            $('body h1').css('color','red');
+        }
+        );
+        
+    </script>
+</head>
+
+<body>
+      <div>
+          <h1>dfdf</h1>
+          <ul>
+              <li>짜장면</li>
+              <li>탕수육</li>
+              <li>팔보채</li>
+              <li>짬뽕</li>
+          </ul>
+      </div>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+-
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        
+    </style>
+    <script> //자식선택자 바디에서 모든 자식!
+        $(document).ready(function(){
+            $('input[type="text"]').val('hi');
+        }
+        );
+        
+    </script>
+</head>
+
+<body>
+      <input type="text">
+      <input type="radio">
+      <input type="checkbox">
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        $(document).ready(function () {
+            $('tr:odd').css('background', 'yellow');
+            $('tr:even').css('background', 'pink');
+        });
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+        <tr>
+            <th>이름</th>
+            <th>지역</th>
+        </tr>
+        <tr>
+            <th>준호</th>
+            <th>서울</th>
+        </tr>
+        <tr>
+            <th>효준</th>
+            <th>경기</th>
+        </tr>
+        <tr>
+            <th>승철</th>
+            <th>서울</th>
+        </tr>
+        <tr>
+            <th>오섭</th>
+            <th>경기</th>
+        </tr>
+
+        </tr>
+    </table>
 
 
 </body>
